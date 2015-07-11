@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 oi Roms Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/oi_settings_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <!-- Status bar -->
+        <PreferenceScreen
+                android:id="@+id/status_bar_settings"
+                android:key="status_bar_settings"
+                android:title="@string/status_bar_title"
+                android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
+                android:icon="@drawable/ic_settings_extdesk_hidenavbar"
+                settings:advanced="true"
+                />
+
+        <!-- Notification drawer -->
+        <PreferenceScreen
+                android:id="@+id/notification_drawer_settings"
+                android:title="@string/notification_drawer_title"
+                android:fragment="com.android.settings.cyanogenmod.NotificationDrawerSettings"
+                android:icon="@drawable/ic_settings_notification_drawer"
+                settings:advanced="true"
+                />
+
+        <!-- Sound -->
+        <PreferenceScreen
+                android:id="@+id/sound_settings"
+                android:title="@string/category_sounds"
+                android:fragment="com.android.settings.SoundSettings"
+                android:icon="@drawable/ic_settings_sounds"
+                />
+
+        <!-- Display & lights -->
+        <PreferenceScreen
+                android:id="@+id/display_and_lights_settings"
+                android:title="@string/display_and_lights"
+                android:fragment="com.android.settings.DisplaySettings"
+                android:icon="@drawable/ic_settings_display"
+                />
+
+       <!-- Lockscreen shortcuts -->
+       <PreferenceScreen
+               android:key="lockscreen_oi"
+               android:fragment="com.android.settings.oi.LockScreenSettings"
+               android:title="@string/oi_lockscreen_title" 
+               android:icon="@drawable/ic_settings_oi_lockscreen"
+               />
+
+        <!-- Buttons -->
+        <PreferenceScreen
+                android:id="@+id/button_settings"
+                android:title="@string/button_pref_title"
+                android:fragment="com.android.settings.ButtonSettings"
+                android:icon="@drawable/ic_settings_buttons"
+                />
+
+       <!-- Navigation Options -->
+       <PreferenceScreen
+              android:key="navigation_options"
+              android:fragment="com.android.settings.oi.NavigationSettings"
+              android:title="@string/navigation_options"
+              android:icon="@drawable/ic_settings_navigation_bar"
+              />
+
+        <!-- oi Tweaks -->
+        <PreferenceScreen
+                android:key="oi_tweaks"
+                android:title="@string/oi_tweaks_title"
+                android:fragment="com.android.settings.oi.oiTweaks"
+                android:icon="@drawable/ic_oi_tweaks" 
+                />
+
+        <!-- oiCenter -->
+        <PreferenceScreen
+                android:id="@+id/oicenter_settings"
+                android:icon="@drawable/ic_settings_oi_center"
+                android:fragment="com.android.settings.oi.oiCenterSettings"
+                android:title="@string/oicenter_settings_title"
+                />
+
+
+</PreferenceScreen>
